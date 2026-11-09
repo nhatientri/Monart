@@ -284,5 +284,7 @@ iCloud is left out: real iCloud sync needs an iCloud entitlement signed with a p
 - [x] Transform steps report only the area they changed.
 - [x] Xcode's Run uses the Release configuration (Swift pixel loops 3–20× faster); tests stay Debug.
 - [x] `scripts/install.sh` installs a Release build in /Applications (`--dmg` also makes a disk image).
-- [ ] To share beyond this Mac: Apple Developer Program, Developer ID signing, hardened
-      runtime, notarization (`notarytool`), stapled DMG — or the Mac App Store.
+- [x] Free, open-source distribution without the Apple Developer Program: MIT license,
+      version 1.0.0, `scripts/build-release.sh` (universal app + drag-to-install DMG),
+      GitHub Actions CI (tests on push) and release (tag `v<version>` → GitHub Release).
+      Ad-hoc signed, so first launch needs Privacy & Security ▸ Open Anyway (documented).

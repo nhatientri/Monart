@@ -8,7 +8,8 @@ options:
 settings:
   base:
     SWIFT_VERSION: "5.0"
-    MARKETING_VERSION: "0.1"
+    # The released version; a release is published by pushing the tag v<this>.
+    MARKETING_VERSION: "1.0.0"
     CURRENT_PROJECT_VERSION: "1"
 
 targets:
@@ -35,8 +36,10 @@ targets:
       path: Canvas/Resources/Info.plist
       properties:
         CFBundleDisplayName: Canvas
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         LSApplicationCategoryType: public.app-category.graphics-design
-        NSHumanReadableCopyright: ""
+        NSHumanReadableCopyright: "© 2026 nhatientri. Free and open source under the MIT License."
         CFBundleDocumentTypes:
           - CFBundleTypeName: Canvas Drawing
             CFBundleTypeRole: Editor

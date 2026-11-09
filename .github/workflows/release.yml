@@ -1,0 +1,41 @@
+# Publishes a GitHub Release with the disk image when a version tag is pushed:
+#
+#   git tag v1.0.0 && git push origin v1.0.0
+#
+# The tag must match MARKETING_VERSION in project.yml.
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write   # create the release and upload the disk image
+
+jobs:
+  release:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check the tag matches the app version
+        run: |
+          version=$(awk -F'"' '/MARKETING_VERSION:/ { print $2; exit }' project.yml)
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::Tag $GITHUB_REF_NAME doesn't match MARKETING_VERSION $version in project.yml"
+            exit 1
+          fi
+
+      - name: Run tests
+        run: xcodebuild test -project Canvas.xcodeproj -scheme Canvas -destination 'platform=macOS' -quiet
+
+      - name: Build app and disk image
+        run: scripts/build-release.sh
+
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" build/Canvas-*.dmg \
+            --title "Canvas ${GITHUB_REF_NAME#v}" \
+            --notes-file .github/release-notes.md
