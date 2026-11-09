@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003E013CD061D1B2E27AC465 /* FloodFillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521DF16C247B801DC8E6E8D4 /* FloodFillTests.swift */; };
+		053CE3870A40D0ADEE992209 /* StrokeRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75BE475DB49081115BBBFC9 /* StrokeRenderer.swift */; };
+		0DA2015E2C1F57B541A6BE58 /* TransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBD4190FB4942113EC68B7 /* TransformTests.swift */; };
+		0E0FC428036A87B75E6FEF45 /* BrushPresetMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B3E8F8B5A9FE5541654EDE /* BrushPresetMenu.swift */; };
+		12A887455F6718D8579B8186 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC51452D2D95C37E6A45463 /* HistoryManager.swift */; };
+		179B2E2402A94342D52ED3CD /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCDA407F1502700D4A5D5D8 /* StatusBar.swift */; };
+		1D699CAB7446442B24DF4BF1 /* TransformTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036DAF15FBF4AE5EB898EC6 /* TransformTool.swift */; };
+		1F25BC58C22929A792C0D4C2 /* Selection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD66078EDE15CDE989A4E8A /* Selection.swift */; };
+		2A56879E82EB8553E1AF6666 /* FloodFill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824D4A708100F9B6A23C5A61 /* FloodFill.swift */; };
+		3215B97B150F5B80AFFEAEC7 /* CanvasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A2F6E713D0B5B3389F4FE2 /* CanvasApp.swift */; };
+		3567CD89AD2CEA91CD1CB1A6 /* CanvasNSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E389871997C0DEF038A788 /* CanvasNSView.swift */; };
+		414FAEF512B2FC2DC885DC76 /* LayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A46F2725EBD8D0C9E816387 /* LayerRow.swift */; };
+		4B567DA0CADDEA5176C6FB39 /* ImageExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF6DA42E8DAA886F324482E /* ImageExporter.swift */; };
+		4E362CAD148188F5E16C8237 /* CanvasSizeSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165FBAB55FE8411F6DEEA2C6 /* CanvasSizeSheet.swift */; };
+		5143245F55E48E8C98A5019A /* LayersPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA0D95F44FC6045CCDDB269 /* LayersPanel.swift */; };
+		530BCDC47A234E816AC4288F /* ToolOptionsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9238DD12748928CC5451C5C /* ToolOptionsBar.swift */; };
+		57164244F4A05CC67B9F6453 /* BitmapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3FCEF3F0A6DB0CFD1BAD4F /* BitmapTests.swift */; };
+		598ECA28FD0B903956D0501F /* CanvasLayerViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD699CDD73A4693A85779E2 /* CanvasLayerViews.swift */; };
+		5BC11E10CD27848E07C4E079 /* Compositor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889B1F500200939F565C3875 /* Compositor.swift */; };
+		5C33C224B5622D7A18C294CB /* Viewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2572424F6E8574F7EC69579B /* Viewport.swift */; };
+		5C4EBBA2B9AA05F0EA32F259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E55871F1C2D83E54A6E27AB /* Assets.xcassets */; };
+		5D05FF2E88D6842C50B5156A /* SelectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E4744C5E9F726CA68D948F /* SelectionTests.swift */; };
+		5F3BA15D7F01FE1FEAA66CF2 /* DocumentFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03BE48DF06BE3E7ADD3EDE2 /* DocumentFormatTests.swift */; };
+		6086DE56A7D86664595BBAB5 /* CanvasSizeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778561BBE9D40304AA2968B9 /* CanvasSizeTests.swift */; };
+		6B81333C0B6642015FFCDB57 /* Bitmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EDE11A3F2D1243E248F7A1 /* Bitmap.swift */; };
+		6CA815A061B3FC4315DD6AAF /* EditorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8371FEEDD84BB5ACC1ED15 /* EditorState.swift */; };
+		72BD9E83DAC80883E02BF3BD /* PixelEdits.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BAF9B0203D5839A15307AF /* PixelEdits.swift */; };
+		7596DD270AE8785D53B05AA2 /* EyedropperTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BA5A1F3335C92D35AFDC34 /* EyedropperTool.swift */; };
+		770AAB7EB384543C947DC881 /* StrokeRendererTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B67C5AA69C5D814ACCB08F /* StrokeRendererTests.swift */; };
+		7B70063756B3DD0563BC94E1 /* ToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9A769BC38C0CD30996D90C /* ToolTests.swift */; };
+		7D4D1D2F1683CD9BF3261BD9 /* TextTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2B98B702324008B452C272 /* TextTool.swift */; };
+		8345DF1BC5E7D0B05E9F11B9 /* ViewportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC0D1AA97EE27D0114D5684 /* ViewportTests.swift */; };
+		8E848B450F1482A08BC2F0E4 /* CanvasModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003F7EFC1E43B138E088495A /* CanvasModel.swift */; };
+		9357D6696D4C1658E04A01D9 /* HandTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37A7FF9014745420ABC57F /* HandTool.swift */; };
+		971054B2DFFDD4D2F273D8DC /* BitmapSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C3F282B3136C0C0AAACA44 /* BitmapSnapshot.swift */; };
+		996D328095F52FCA3FE96E24 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3494D9A6A058E62ECE5224 /* Filters.swift */; };
+		A0F7FBE5879CA415532958CC /* ToolKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B028E91BB059788399597A /* ToolKind.swift */; };
+		A1FFB144BE2E4ABDEE736841 /* FilterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4C3B15EE972E4359C661B /* FilterSheet.swift */; };
+		AC6F8C2DE4D5E61C04610751 /* ShapeTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1795C0AC5D5E5022927229 /* ShapeTool.swift */; };
+		B7985C6FCC06250ADAE58C57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935F4FFA7A567DA7051FE7F6 /* ContentView.swift */; };
+		BE67CF894E83EC802B5B4CBD /* BrushSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20EDAEF739620F8D27C097D /* BrushSettings.swift */; };
+		BE8394CC9CBF9B21B0A1634A /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26F83B9F209B45197D8C907 /* Tool.swift */; };
+		C1911CF54FC5D23204631277 /* ColorPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB6680CD3E8076BBDD88C60 /* ColorPanel.swift */; };
+		C2111C2557735E484B5CD8D1 /* DocumentFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C17D0A43F828DA816B692CE /* DocumentFormat.swift */; };
+		C441831933A6208009827CE0 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A45B63F8C1425B6158F067A /* Layer.swift */; };
+		C5CD30ADE32495187F97D3AE /* CanvasSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA76D07F7FF756179D22F12 /* CanvasSetup.swift */; };
+		C5E838FB0447A6A0D65A423A /* FillTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F5BE8D1181E277F7B2D093 /* FillTool.swift */; };
+		C60376B77BA87E53DA1D19D3 /* ToolPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A72609A1A530FAECE0F5CF /* ToolPalette.swift */; };
+		C7F54A41C66AB54CF08D3C25 /* ImageImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0760D97AF6228BB73BBA5C /* ImageImporter.swift */; };
+		D172A902CEB33C7C8260AE07 /* BrushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECD841D3B5B54AB977C278D /* BrushTests.swift */; };
+		D1849B5A426764BACB2BEF07 /* InlineRenameField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165F7942DC766C1F1618CE4C /* InlineRenameField.swift */; };
+		D251B7F244510C0BD7BEF940 /* SelectTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54EC0189CABBF84B969177C /* SelectTool.swift */; };
+		D579835C9722C7DB0B7D66B3 /* ImageIOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5066BB75261F7C7848C8A562 /* ImageIOTests.swift */; };
+		D57F4275172E6D2575674923 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5983A8C56E701ADF1F2A23 /* CanvasView.swift */; };
+		D6043DB4BD71AFAFB25C9D9E /* CGGeometry+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825062B8D309693CB61907A7 /* CGGeometry+Ext.swift */; };
+		D9328F440892B47DE6C06CB9 /* FilterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606AA12ACA97E3759836764B /* FilterTests.swift */; };
+		D967ED8C8A35EE3D9F637187 /* CanvasModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E8B09134C1DF6BE09F9E3F /* CanvasModelTests.swift */; };
+		DEA3ADEA46FEFF3475C7D847 /* HistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C83E68730673ECBEC9CA1 /* HistoryTests.swift */; };
+		E155804F5520CDDA3D822614 /* AppCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77699689190D2B41B928465 /* AppCommands.swift */; };
+		EAF4F9F4EBE6262482170F98 /* BrushTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB203CF066745AD9E9C245E /* BrushTool.swift */; };
+		EE30F7A1F7ECAEAFB764C7A4 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FAB7FB35BB193265BBF4A6 /* Color+Ext.swift */; };
+		F2CFD34BFDECFBF170FA5502 /* Snapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE2157DFDCD8DB8BC2D67D /* Snapping.swift */; };
+		F99649E244C27A5797BD5281 /* BrushLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F24E2959DA8989DF23B44 /* BrushLibrary.swift */; };
+		FC2BE4832A3E8831ABCABCFD /* EraserTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63A324A81335F7BEF0EE8E0 /* EraserTool.swift */; };
+		FFD1A173DB1424B63CE2EED0 /* LayerBlendMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D55956D9C7AC3BFE2EC5B86 /* LayerBlendMode.swift */; };
+		FFEEA1BE8DF278538AE5CC60 /* CanvasDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1526CA40DEB432593C6BD8 /* CanvasDocument.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4BD7D4B5BC14AE2493492153 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1ADC15337184C6B556F35D9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9E7BF17F758EEF73CBF7800;
+			remoteInfo = Canvas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0036DAF15FBF4AE5EB898EC6 /* TransformTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformTool.swift; sourceTree = "<group>"; };
+		003F7EFC1E43B138E088495A /* CanvasModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasModel.swift; sourceTree = "<group>"; };
+		165F7942DC766C1F1618CE4C /* InlineRenameField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InlineRenameField.swift; sourceTree = "<group>"; };
+		165FBAB55FE8411F6DEEA2C6 /* CanvasSizeSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasSizeSheet.swift; sourceTree = "<group>"; };
+		1BC0D1AA97EE27D0114D5684 /* ViewportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewportTests.swift; sourceTree = "<group>"; };
+		1D36054F6DEFB96A6CEB3AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1D55956D9C7AC3BFE2EC5B86 /* LayerBlendMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerBlendMode.swift; sourceTree = "<group>"; };
+		1E8371FEEDD84BB5ACC1ED15 /* EditorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorState.swift; sourceTree = "<group>"; };
+		24B028E91BB059788399597A /* ToolKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolKind.swift; sourceTree = "<group>"; };
+		2572424F6E8574F7EC69579B /* Viewport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewport.swift; sourceTree = "<group>"; };
+		28E389871997C0DEF038A788 /* CanvasNSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasNSView.swift; sourceTree = "<group>"; };
+		2A1526CA40DEB432593C6BD8 /* CanvasDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasDocument.swift; sourceTree = "<group>"; };
+		3AA0D95F44FC6045CCDDB269 /* LayersPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayersPanel.swift; sourceTree = "<group>"; };
+		3E55871F1C2D83E54A6E27AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41E4744C5E9F726CA68D948F /* SelectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTests.swift; sourceTree = "<group>"; };
+		45BA5A1F3335C92D35AFDC34 /* EyedropperTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyedropperTool.swift; sourceTree = "<group>"; };
+		4A45B63F8C1425B6158F067A /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
+		4B3494D9A6A058E62ECE5224 /* Filters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		4C1795C0AC5D5E5022927229 /* ShapeTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeTool.swift; sourceTree = "<group>"; };
+		4CEE2157DFDCD8DB8BC2D67D /* Snapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapping.swift; sourceTree = "<group>"; };
+		5066BB75261F7C7848C8A562 /* ImageIOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageIOTests.swift; sourceTree = "<group>"; };
+		521DF16C247B801DC8E6E8D4 /* FloodFillTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodFillTests.swift; sourceTree = "<group>"; };
+		5C17D0A43F828DA816B692CE /* DocumentFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentFormat.swift; sourceTree = "<group>"; };
+		5CB6680CD3E8076BBDD88C60 /* ColorPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPanel.swift; sourceTree = "<group>"; };
+		5E37A7FF9014745420ABC57F /* HandTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTool.swift; sourceTree = "<group>"; };
+		606AA12ACA97E3759836764B /* FilterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTests.swift; sourceTree = "<group>"; };
+		6411992ADAE9E9596FC3EE76 /* Canvas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Canvas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BA76D07F7FF756179D22F12 /* CanvasSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasSetup.swift; sourceTree = "<group>"; };
+		71B3E8F8B5A9FE5541654EDE /* BrushPresetMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushPresetMenu.swift; sourceTree = "<group>"; };
+		778561BBE9D40304AA2968B9 /* CanvasSizeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasSizeTests.swift; sourceTree = "<group>"; };
+		79FAB7FB35BB193265BBF4A6 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		7A46F2725EBD8D0C9E816387 /* LayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerRow.swift; sourceTree = "<group>"; };
+		824D4A708100F9B6A23C5A61 /* FloodFill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloodFill.swift; sourceTree = "<group>"; };
+		825062B8D309693CB61907A7 /* CGGeometry+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGGeometry+Ext.swift"; sourceTree = "<group>"; };
+		8791D78914C4A8E712300514 /* Canvas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Canvas.entitlements; sourceTree = "<group>"; };
+		889B1F500200939F565C3875 /* Compositor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compositor.swift; sourceTree = "<group>"; };
+		8C2B98B702324008B452C272 /* TextTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTool.swift; sourceTree = "<group>"; };
+		935F4FFA7A567DA7051FE7F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		94EDE11A3F2D1243E248F7A1 /* Bitmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitmap.swift; sourceTree = "<group>"; };
+		99B67C5AA69C5D814ACCB08F /* StrokeRendererTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeRendererTests.swift; sourceTree = "<group>"; };
+		9ECD841D3B5B54AB977C278D /* BrushTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushTests.swift; sourceTree = "<group>"; };
+		A1BAF9B0203D5839A15307AF /* PixelEdits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PixelEdits.swift; sourceTree = "<group>"; };
+		A75BE475DB49081115BBBFC9 /* StrokeRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeRenderer.swift; sourceTree = "<group>"; };
+		AE4C83E68730673ECBEC9CA1 /* HistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTests.swift; sourceTree = "<group>"; };
+		AE9A769BC38C0CD30996D90C /* ToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolTests.swift; sourceTree = "<group>"; };
+		AEA0A308923FC240D8D3FACC /* CanvasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CanvasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20EDAEF739620F8D27C097D /* BrushSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushSettings.swift; sourceTree = "<group>"; };
+		B6A2F6E713D0B5B3389F4FE2 /* CanvasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasApp.swift; sourceTree = "<group>"; };
+		B77699689190D2B41B928465 /* AppCommands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCommands.swift; sourceTree = "<group>"; };
+		B8F5BE8D1181E277F7B2D093 /* FillTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillTool.swift; sourceTree = "<group>"; };
+		BBC51452D2D95C37E6A45463 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
+		C03BE48DF06BE3E7ADD3EDE2 /* DocumentFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentFormatTests.swift; sourceTree = "<group>"; };
+		D8A72609A1A530FAECE0F5CF /* ToolPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolPalette.swift; sourceTree = "<group>"; };
+		D9238DD12748928CC5451C5C /* ToolOptionsBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolOptionsBar.swift; sourceTree = "<group>"; };
+		DA3FCEF3F0A6DB0CFD1BAD4F /* BitmapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitmapTests.swift; sourceTree = "<group>"; };
+		DA8F24E2959DA8989DF23B44 /* BrushLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushLibrary.swift; sourceTree = "<group>"; };
+		DBB203CF066745AD9E9C245E /* BrushTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrushTool.swift; sourceTree = "<group>"; };
+		DBCDA407F1502700D4A5D5D8 /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
+		E1A4C3B15EE972E4359C661B /* FilterSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSheet.swift; sourceTree = "<group>"; };
+		E26F83B9F209B45197D8C907 /* Tool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
+		E6C3F282B3136C0C0AAACA44 /* BitmapSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitmapSnapshot.swift; sourceTree = "<group>"; };
+		EAF6DA42E8DAA886F324482E /* ImageExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExporter.swift; sourceTree = "<group>"; };
+		EB0760D97AF6228BB73BBA5C /* ImageImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageImporter.swift; sourceTree = "<group>"; };
+		EE5983A8C56E701ADF1F2A23 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		EFDBD4190FB4942113EC68B7 /* TransformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformTests.swift; sourceTree = "<group>"; };
+		F54EC0189CABBF84B969177C /* SelectTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTool.swift; sourceTree = "<group>"; };
+		F63A324A81335F7BEF0EE8E0 /* EraserTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EraserTool.swift; sourceTree = "<group>"; };
+		F8E8B09134C1DF6BE09F9E3F /* CanvasModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasModelTests.swift; sourceTree = "<group>"; };
+		FDD66078EDE15CDE989A4E8A /* Selection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selection.swift; sourceTree = "<group>"; };
+		FDD699CDD73A4693A85779E2 /* CanvasLayerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasLayerViews.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		00139D9974E6F4CD0620A20B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6411992ADAE9E9596FC3EE76 /* Canvas.app */,
+				AEA0A308923FC240D8D3FACC /* CanvasTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11225CD08349BF5917059D5F /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				2A1526CA40DEB432593C6BD8 /* CanvasDocument.swift */,
+				5C17D0A43F828DA816B692CE /* DocumentFormat.swift */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		1317D8F5B65571627C8ADCA1 /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				7207F5B3B4022D3C2F894CEC /* App */,
+				11225CD08349BF5917059D5F /* Document */,
+				92B75265BAF982A30C487448 /* History */,
+				63C21D1545FFE73E013DD07F /* IO */,
+				194839CEA7E716E4E96825EC /* Model */,
+				DDC4ED95EFD04E874424CB88 /* Rendering */,
+				3589B64B6D46911957B9AADE /* Resources */,
+				94FD595C30F1796CD7C02AB6 /* Tools */,
+				DD34F0FE7FF08B07C332C66F /* UI */,
+				935D22F220E24548A25A22A7 /* Utilities */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		194839CEA7E716E4E96825EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94EDE11A3F2D1243E248F7A1 /* Bitmap.swift */,
+				DA8F24E2959DA8989DF23B44 /* BrushLibrary.swift */,
+				B20EDAEF739620F8D27C097D /* BrushSettings.swift */,
+				003F7EFC1E43B138E088495A /* CanvasModel.swift */,
+				6BA76D07F7FF756179D22F12 /* CanvasSetup.swift */,
+				1E8371FEEDD84BB5ACC1ED15 /* EditorState.swift */,
+				4A45B63F8C1425B6158F067A /* Layer.swift */,
+				1D55956D9C7AC3BFE2EC5B86 /* LayerBlendMode.swift */,
+				FDD66078EDE15CDE989A4E8A /* Selection.swift */,
+				24B028E91BB059788399597A /* ToolKind.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3589B64B6D46911957B9AADE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E55871F1C2D83E54A6E27AB /* Assets.xcassets */,
+				8791D78914C4A8E712300514 /* Canvas.entitlements */,
+				1D36054F6DEFB96A6CEB3AD6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		63C21D1545FFE73E013DD07F /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				EAF6DA42E8DAA886F324482E /* ImageExporter.swift */,
+				EB0760D97AF6228BB73BBA5C /* ImageImporter.swift */,
+			);
+			path = IO;
+			sourceTree = "<group>";
+		};
+		65B125DECB83636404DDF309 /* CanvasTests */ = {
+			isa = PBXGroup;
+			children = (
+				DA3FCEF3F0A6DB0CFD1BAD4F /* BitmapTests.swift */,
+				9ECD841D3B5B54AB977C278D /* BrushTests.swift */,
+				F8E8B09134C1DF6BE09F9E3F /* CanvasModelTests.swift */,
+				778561BBE9D40304AA2968B9 /* CanvasSizeTests.swift */,
+				C03BE48DF06BE3E7ADD3EDE2 /* DocumentFormatTests.swift */,
+				606AA12ACA97E3759836764B /* FilterTests.swift */,
+				521DF16C247B801DC8E6E8D4 /* FloodFillTests.swift */,
+				AE4C83E68730673ECBEC9CA1 /* HistoryTests.swift */,
+				5066BB75261F7C7848C8A562 /* ImageIOTests.swift */,
+				41E4744C5E9F726CA68D948F /* SelectionTests.swift */,
+				99B67C5AA69C5D814ACCB08F /* StrokeRendererTests.swift */,
+				AE9A769BC38C0CD30996D90C /* ToolTests.swift */,
+				EFDBD4190FB4942113EC68B7 /* TransformTests.swift */,
+				1BC0D1AA97EE27D0114D5684 /* ViewportTests.swift */,
+			);
+			path = CanvasTests;
+			sourceTree = "<group>";
+		};
+		7207F5B3B4022D3C2F894CEC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B77699689190D2B41B928465 /* AppCommands.swift */,
+				B6A2F6E713D0B5B3389F4FE2 /* CanvasApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7CBAFD5024D8EC0EEC8A318C = {
+			isa = PBXGroup;
+			children = (
+				1317D8F5B65571627C8ADCA1 /* Canvas */,
+				65B125DECB83636404DDF309 /* CanvasTests */,
+				00139D9974E6F4CD0620A20B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92B75265BAF982A30C487448 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				E6C3F282B3136C0C0AAACA44 /* BitmapSnapshot.swift */,
+				BBC51452D2D95C37E6A45463 /* HistoryManager.swift */,
+				A1BAF9B0203D5839A15307AF /* PixelEdits.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		935D22F220E24548A25A22A7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				825062B8D309693CB61907A7 /* CGGeometry+Ext.swift */,
+				79FAB7FB35BB193265BBF4A6 /* Color+Ext.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		94FD595C30F1796CD7C02AB6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				DBB203CF066745AD9E9C245E /* BrushTool.swift */,
+				F63A324A81335F7BEF0EE8E0 /* EraserTool.swift */,
+				45BA5A1F3335C92D35AFDC34 /* EyedropperTool.swift */,
+				B8F5BE8D1181E277F7B2D093 /* FillTool.swift */,
+				5E37A7FF9014745420ABC57F /* HandTool.swift */,
+				F54EC0189CABBF84B969177C /* SelectTool.swift */,
+				4C1795C0AC5D5E5022927229 /* ShapeTool.swift */,
+				4CEE2157DFDCD8DB8BC2D67D /* Snapping.swift */,
+				8C2B98B702324008B452C272 /* TextTool.swift */,
+				E26F83B9F209B45197D8C907 /* Tool.swift */,
+				0036DAF15FBF4AE5EB898EC6 /* TransformTool.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		DD34F0FE7FF08B07C332C66F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				71B3E8F8B5A9FE5541654EDE /* BrushPresetMenu.swift */,
+				165FBAB55FE8411F6DEEA2C6 /* CanvasSizeSheet.swift */,
+				5CB6680CD3E8076BBDD88C60 /* ColorPanel.swift */,
+				935F4FFA7A567DA7051FE7F6 /* ContentView.swift */,
+				E1A4C3B15EE972E4359C661B /* FilterSheet.swift */,
+				165F7942DC766C1F1618CE4C /* InlineRenameField.swift */,
+				7A46F2725EBD8D0C9E816387 /* LayerRow.swift */,
+				3AA0D95F44FC6045CCDDB269 /* LayersPanel.swift */,
+				DBCDA407F1502700D4A5D5D8 /* StatusBar.swift */,
+				D9238DD12748928CC5451C5C /* ToolOptionsBar.swift */,
+				D8A72609A1A530FAECE0F5CF /* ToolPalette.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DDC4ED95EFD04E874424CB88 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				FDD699CDD73A4693A85779E2 /* CanvasLayerViews.swift */,
+				28E389871997C0DEF038A788 /* CanvasNSView.swift */,
+				EE5983A8C56E701ADF1F2A23 /* CanvasView.swift */,
+				889B1F500200939F565C3875 /* Compositor.swift */,
+				4B3494D9A6A058E62ECE5224 /* Filters.swift */,
+				824D4A708100F9B6A23C5A61 /* FloodFill.swift */,
+				A75BE475DB49081115BBBFC9 /* StrokeRenderer.swift */,
+				2572424F6E8574F7EC69579B /* Viewport.swift */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70040954A7117B7EDC8086A0 /* CanvasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 480B650A525FA5E4821920DF /* Build configuration list for PBXNativeTarget "CanvasTests" */;
+			buildPhases = (
+				EE799F3A9296B12882A39906 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9422A117B9E83DF54D93CD9F /* PBXTargetDependency */,
+			);
+			name = CanvasTests;
+			packageProductDependencies = (
+			);
+			productName = CanvasTests;
+			productReference = AEA0A308923FC240D8D3FACC /* CanvasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C9E7BF17F758EEF73CBF7800 /* Canvas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1AD3F089EF0731493DE377 /* Build configuration list for PBXNativeTarget "Canvas" */;
+			buildPhases = (
+				EAD115998C4102A07DE5FF4C /* Sources */,
+				140C93C4267590467203F0E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Canvas;
+			packageProductDependencies = (
+			);
+			productName = Canvas;
+			productReference = 6411992ADAE9E9596FC3EE76 /* Canvas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1ADC15337184C6B556F35D9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					70040954A7117B7EDC8086A0 = {
+						ProvisioningStyle = Manual;
+					};
+					C9E7BF17F758EEF73CBF7800 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = A29B1562DB03D9ADD5BE94AA /* Build configuration list for PBXProject "Canvas" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7CBAFD5024D8EC0EEC8A318C;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 00139D9974E6F4CD0620A20B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9E7BF17F758EEF73CBF7800 /* Canvas */,
+				70040954A7117B7EDC8086A0 /* CanvasTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		140C93C4267590467203F0E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C4EBBA2B9AA05F0EA32F259 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAD115998C4102A07DE5FF4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E155804F5520CDDA3D822614 /* AppCommands.swift in Sources */,
+				6B81333C0B6642015FFCDB57 /* Bitmap.swift in Sources */,
+				971054B2DFFDD4D2F273D8DC /* BitmapSnapshot.swift in Sources */,
+				F99649E244C27A5797BD5281 /* BrushLibrary.swift in Sources */,
+				0E0FC428036A87B75E6FEF45 /* BrushPresetMenu.swift in Sources */,
+				BE67CF894E83EC802B5B4CBD /* BrushSettings.swift in Sources */,
+				EAF4F9F4EBE6262482170F98 /* BrushTool.swift in Sources */,
+				D6043DB4BD71AFAFB25C9D9E /* CGGeometry+Ext.swift in Sources */,
+				3215B97B150F5B80AFFEAEC7 /* CanvasApp.swift in Sources */,
+				FFEEA1BE8DF278538AE5CC60 /* CanvasDocument.swift in Sources */,
+				598ECA28FD0B903956D0501F /* CanvasLayerViews.swift in Sources */,
+				8E848B450F1482A08BC2F0E4 /* CanvasModel.swift in Sources */,
+				3567CD89AD2CEA91CD1CB1A6 /* CanvasNSView.swift in Sources */,
+				C5CD30ADE32495187F97D3AE /* CanvasSetup.swift in Sources */,
+				4E362CAD148188F5E16C8237 /* CanvasSizeSheet.swift in Sources */,
+				D57F4275172E6D2575674923 /* CanvasView.swift in Sources */,
+				EE30F7A1F7ECAEAFB764C7A4 /* Color+Ext.swift in Sources */,
+				C1911CF54FC5D23204631277 /* ColorPanel.swift in Sources */,
+				5BC11E10CD27848E07C4E079 /* Compositor.swift in Sources */,
+				B7985C6FCC06250ADAE58C57 /* ContentView.swift in Sources */,
+				C2111C2557735E484B5CD8D1 /* DocumentFormat.swift in Sources */,
+				6CA815A061B3FC4315DD6AAF /* EditorState.swift in Sources */,
+				FC2BE4832A3E8831ABCABCFD /* EraserTool.swift in Sources */,
+				7596DD270AE8785D53B05AA2 /* EyedropperTool.swift in Sources */,
+				C5E838FB0447A6A0D65A423A /* FillTool.swift in Sources */,
+				A1FFB144BE2E4ABDEE736841 /* FilterSheet.swift in Sources */,
+				996D328095F52FCA3FE96E24 /* Filters.swift in Sources */,
+				2A56879E82EB8553E1AF6666 /* FloodFill.swift in Sources */,
+				9357D6696D4C1658E04A01D9 /* HandTool.swift in Sources */,
+				12A887455F6718D8579B8186 /* HistoryManager.swift in Sources */,
+				4B567DA0CADDEA5176C6FB39 /* ImageExporter.swift in Sources */,
+				C7F54A41C66AB54CF08D3C25 /* ImageImporter.swift in Sources */,
+				D1849B5A426764BACB2BEF07 /* InlineRenameField.swift in Sources */,
+				C441831933A6208009827CE0 /* Layer.swift in Sources */,
+				FFD1A173DB1424B63CE2EED0 /* LayerBlendMode.swift in Sources */,
+				414FAEF512B2FC2DC885DC76 /* LayerRow.swift in Sources */,
+				5143245F55E48E8C98A5019A /* LayersPanel.swift in Sources */,
+				72BD9E83DAC80883E02BF3BD /* PixelEdits.swift in Sources */,
+				D251B7F244510C0BD7BEF940 /* SelectTool.swift in Sources */,
+				1F25BC58C22929A792C0D4C2 /* Selection.swift in Sources */,
+				AC6F8C2DE4D5E61C04610751 /* ShapeTool.swift in Sources */,
+				F2CFD34BFDECFBF170FA5502 /* Snapping.swift in Sources */,
+				179B2E2402A94342D52ED3CD /* StatusBar.swift in Sources */,
+				053CE3870A40D0ADEE992209 /* StrokeRenderer.swift in Sources */,
+				7D4D1D2F1683CD9BF3261BD9 /* TextTool.swift in Sources */,
+				BE8394CC9CBF9B21B0A1634A /* Tool.swift in Sources */,
+				A0F7FBE5879CA415532958CC /* ToolKind.swift in Sources */,
+				530BCDC47A234E816AC4288F /* ToolOptionsBar.swift in Sources */,
+				C60376B77BA87E53DA1D19D3 /* ToolPalette.swift in Sources */,
+				1D699CAB7446442B24DF4BF1 /* TransformTool.swift in Sources */,
+				5C33C224B5622D7A18C294CB /* Viewport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE799F3A9296B12882A39906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57164244F4A05CC67B9F6453 /* BitmapTests.swift in Sources */,
+				D172A902CEB33C7C8260AE07 /* BrushTests.swift in Sources */,
+				D967ED8C8A35EE3D9F637187 /* CanvasModelTests.swift in Sources */,
+				6086DE56A7D86664595BBAB5 /* CanvasSizeTests.swift in Sources */,
+				5F3BA15D7F01FE1FEAA66CF2 /* DocumentFormatTests.swift in Sources */,
+				D9328F440892B47DE6C06CB9 /* FilterTests.swift in Sources */,
+				003E013CD061D1B2E27AC465 /* FloodFillTests.swift in Sources */,
+				DEA3ADEA46FEFF3475C7D847 /* HistoryTests.swift in Sources */,
+				D579835C9722C7DB0B7D66B3 /* ImageIOTests.swift in Sources */,
+				5D05FF2E88D6842C50B5156A /* SelectionTests.swift in Sources */,
+				770AAB7EB384543C947DC881 /* StrokeRendererTests.swift in Sources */,
+				7B70063756B3DD0563BC94E1 /* ToolTests.swift in Sources */,
+				0DA2015E2C1F57B541A6BE58 /* TransformTests.swift in Sources */,
+				8345DF1BC5E7D0B05E9F11B9 /* ViewportTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9422A117B9E83DF54D93CD9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9E7BF17F758EEF73CBF7800 /* Canvas */;
+			targetProxy = 4BD7D4B5BC14AE2493492153 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		066359799E20EE26529E1105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		77A481E68482BD7B8BC6C70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Canvas/Resources/Canvas.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = Canvas/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hunter.Canvas;
+				PRODUCT_NAME = Canvas;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		786DD494A39BAE1E46E9469C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Canvas/Resources/Canvas.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = Canvas/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hunter.Canvas;
+				PRODUCT_NAME = Canvas;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8D407A8531C34013CEB5AED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C45D217A5D26CCE8A9F70F2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hunter.CanvasTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Canvas.app/Contents/MacOS/Canvas";
+			};
+			name = Release;
+		};
+		ED2133075CE50A48840EE255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hunter.CanvasTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Canvas.app/Contents/MacOS/Canvas";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		480B650A525FA5E4821920DF /* Build configuration list for PBXNativeTarget "CanvasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED2133075CE50A48840EE255 /* Debug */,
+				C45D217A5D26CCE8A9F70F2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A29B1562DB03D9ADD5BE94AA /* Build configuration list for PBXProject "Canvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				066359799E20EE26529E1105 /* Debug */,
+				8D407A8531C34013CEB5AED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EB1AD3F089EF0731493DE377 /* Build configuration list for PBXNativeTarget "Canvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77A481E68482BD7B8BC6C70B /* Debug */,
+				786DD494A39BAE1E46E9469C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1ADC15337184C6B556F35D9D /* Project object */;
+}

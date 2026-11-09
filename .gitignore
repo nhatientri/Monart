@@ -1,0 +1,10 @@
+# Build output (scripts/install.sh, xcodebuild -derivedDataPath)
+build/
+DerivedData/
+
+# Per-user Xcode state
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+.DS_Store

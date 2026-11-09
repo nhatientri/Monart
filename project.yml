@@ -1,0 +1,93 @@
+name: Canvas
+options:
+  bundleIdPrefix: com.hunter
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1"
+    CURRENT_PROJECT_VERSION: "1"
+
+targets:
+  Canvas:
+    type: application
+    platform: macOS
+    sources:
+      - path: Canvas
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.hunter.Canvas
+        PRODUCT_NAME: Canvas
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+        ENABLE_HARDENED_RUNTIME: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        COMBINE_HIDPI_IMAGES: YES
+    entitlements:
+      path: Canvas/Resources/Canvas.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.files.user-selected.read-write: true
+    info:
+      path: Canvas/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: Canvas
+        LSApplicationCategoryType: public.app-category.graphics-design
+        NSHumanReadableCopyright: ""
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: Canvas Drawing
+            CFBundleTypeRole: Editor
+            LSHandlerRank: Owner
+            LSTypeIsPackage: true
+            LSItemContentTypes:
+              - com.hunter.canvas
+          - CFBundleTypeName: PNG Image
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes:
+              - public.png
+          - CFBundleTypeName: JPEG Image
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes:
+              - public.jpeg
+        UTExportedTypeDeclarations:
+          - UTTypeIdentifier: com.hunter.canvas
+            UTTypeDescription: Canvas Drawing
+            UTTypeConformsTo:
+              - com.apple.package
+              - public.composite-content
+            UTTypeTagSpecification:
+              public.filename-extension:
+                - canvas
+
+  CanvasTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: CanvasTests
+    dependencies:
+      - target: Canvas
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        CODE_SIGN_IDENTITY: "-"
+        CODE_SIGN_STYLE: Manual
+
+schemes:
+  Canvas:
+    build:
+      targets:
+        Canvas: all
+        CanvasTests: [test]
+    # Run the optimized build: pixel loops (fill, magic wand, brush) are 3–20× faster than
+    # Debug. Tests still build Debug.
+    run:
+      config: Release
+    test:
+      config: Debug
+      targets:
+        - CanvasTests
