@@ -1,19 +1,19 @@
-# Canvas
+# Monart
 
 A free, open-source paint app for macOS, built with SwiftUI and AppKit. It's made for
 drawing with a trackpad or mouse: brushes, layers with blend modes, selections,
 transforms, filters, and a native file format that keeps every layer.
 
-![Canvas with a four-layer sunset drawing](docs/screenshot.png)
+![Monart with a four-layer sunset drawing](docs/screenshot.png)
 
 ## Download
 
 **[Download the latest version](https://github.com/nhatientri/Monart/releases/latest)**
-(`Canvas-x.y.z.dmg`). Requires macOS 14 Sonoma or later, on Apple Silicon or Intel.
+(`Monart-x.y.z.dmg`). Requires macOS 14 Sonoma or later, on Apple Silicon or Intel.
 
-1. Open the disk image and drag **Canvas** onto **Applications**.
-2. Open Canvas. The first time, macOS says it can't verify the developer. That's because
-   Canvas is free and isn't signed with a paid Apple Developer ID, not because anything
+1. Open the disk image and drag **Monart** onto **Applications**.
+2. Open Monart. The first time, macOS says it can't verify the developer. That's because
+   Monart is free and isn't signed with a paid Apple Developer ID, not because anything
    is wrong. Click **Done**, then go to **System Settings ▸ Privacy & Security**, scroll
    down and click **Open Anyway**. You only need to do this once.
 
@@ -38,7 +38,8 @@ transforms, filters, and a native file format that keeps every layer.
 - **Canvas:** opens on a default canvas; Image ▸ Canvas Size… (⌥⌘C) scales or crops it
   and changes the background. Zooming and panning run on the GPU (pinch, ⌘-scroll,
   Space-drag).
-- **Files:** the `.canvas` format keeps layers, opacity and blend modes. You can open
+- **Files:** the `.monart` format keeps layers, opacity and blend modes (drawings saved
+  as `.canvas` by earlier versions still open). You can open
   PNG/JPEG files and export PNG/JPEG (⇧⌘E). Autosave and versions come from macOS.
 - **Undo:** up to 50 steps (⌘Z / ⇧⌘Z).
 
@@ -53,16 +54,16 @@ To build an optimized copy and put it in `/Applications`:
 
 ```sh
 scripts/install.sh          # build and install
-scripts/build-release.sh    # only build build/Canvas-<version>.dmg
+scripts/build-release.sh    # only build build/Monart-<version>.dmg
 ```
 
-To work on the code instead, open `Canvas.xcodeproj` in Xcode and press **⌘R**. The Run
+To work on the code instead, open `Monart.xcodeproj` in Xcode and press **⌘R**. The Run
 action uses the Release configuration, because the pixel code is several times faster
 with optimizations on.
 
 ```sh
 # Run the tests (145 unit tests)
-xcodebuild test -project Canvas.xcodeproj -scheme Canvas -destination 'platform=macOS'
+xcodebuild test -project Monart.xcodeproj -scheme Monart -destination 'platform=macOS'
 ```
 
 The Xcode project is generated from [`project.yml`](project.yml) by
@@ -92,9 +93,9 @@ xcodegen generate
 ## How it's built
 
 ```
-Canvas/
+Monart/
 ├── App/         app entry point, menus and commands
-├── Document/    CanvasDocument (SwiftUI DocumentGroup) and the .canvas package format
+├── Document/    CanvasDocument (SwiftUI DocumentGroup) and the .monart package format
 ├── Model/       CanvasModel, layers, bitmaps, selections, brushes, editor state
 ├── Tools/       one class per tool, plus transform and snapping
 ├── Rendering/   canvas view (AppKit), compositor, stroke renderer, flood fill, filters
@@ -110,7 +111,7 @@ Canvas/
   Selection outlines, previews and transform handles are drawn on a separate overlay.
 - Undo stores only the changed rectangle of a layer (before and after), so most steps
   cost kilobytes, not a full copy of the layer.
-- A `.canvas` file is a package (a folder that Finder shows as one file): `manifest.json`,
+- A `.monart` file is a package (a folder that Finder shows as one file): `manifest.json`,
   one PNG per layer in `layers/`, and a flattened `thumbnail.png`.
 
 [`PLAN.md`](PLAN.md) has the full design notes and milestone history.

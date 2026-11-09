@@ -288,3 +288,14 @@ iCloud is left out: real iCloud sync needs an iCloud entitlement signed with a p
       version 1.0.0, `scripts/build-release.sh` (universal app + drag-to-install DMG),
       GitHub Actions CI (tests on push) and release (tag `v<version>` → GitHub Release).
       Ad-hoc signed, so first launch needs Privacy & Security ▸ Open Anyway (documented).
+
+## Rename to Monart (1.0.0)
+
+- [x] The app is called **Monart**: product, Xcode project/scheme/target, source folders,
+      scripts, release workflow and disk image (`Monart-<version>.dmg`).
+- [x] Native files are `.monart` (`com.hunter.monart`); `.canvas` (`com.hunter.canvas`,
+      which also clashes with Obsidian's Canvas files) still opens and saves.
+- [x] Bundle ID stays `com.hunter.Canvas` so the sandbox container (settings, brush
+      presets, autosaves) carries over; type names like `CanvasModel` refer to the
+      drawing canvas and stay.
+
