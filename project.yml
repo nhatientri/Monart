@@ -1,4 +1,4 @@
-name: Canvas
+name: Monart
 options:
   bundleIdPrefix: com.hunter
   deploymentTarget:
@@ -13,35 +13,44 @@ settings:
     CURRENT_PROJECT_VERSION: "1"
 
 targets:
-  Canvas:
+  Monart:
     type: application
     platform: macOS
     sources:
-      - path: Canvas
+      - path: Monart
     settings:
       base:
+        # Kept from when the app was called Canvas: the sandbox container (settings,
+        # brush presets, autosaves) is tied to it.
         PRODUCT_BUNDLE_IDENTIFIER: com.hunter.Canvas
-        PRODUCT_NAME: Canvas
+        PRODUCT_NAME: Monart
         CODE_SIGN_IDENTITY: "-"
         CODE_SIGN_STYLE: Manual
         ENABLE_HARDENED_RUNTIME: NO
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         COMBINE_HIDPI_IMAGES: YES
     entitlements:
-      path: Canvas/Resources/Canvas.entitlements
+      path: Monart/Resources/Monart.entitlements
       properties:
         com.apple.security.app-sandbox: true
         com.apple.security.files.user-selected.read-write: true
     info:
-      path: Canvas/Resources/Info.plist
+      path: Monart/Resources/Info.plist
       properties:
-        CFBundleDisplayName: Canvas
+        CFBundleDisplayName: Monart
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         LSApplicationCategoryType: public.app-category.graphics-design
         NSHumanReadableCopyright: "© 2026 nhatientri. Free and open source under the MIT License."
         CFBundleDocumentTypes:
-          - CFBundleTypeName: Canvas Drawing
+          - CFBundleTypeName: Monart Drawing
+            CFBundleTypeRole: Editor
+            LSHandlerRank: Owner
+            LSTypeIsPackage: true
+            LSItemContentTypes:
+              - com.hunter.monart
+          # Drawings saved before the rename (.canvas).
+          - CFBundleTypeName: Monart Drawing (Canvas)
             CFBundleTypeRole: Editor
             LSHandlerRank: Owner
             LSTypeIsPackage: true
@@ -58,8 +67,16 @@ targets:
             LSItemContentTypes:
               - public.jpeg
         UTExportedTypeDeclarations:
+          - UTTypeIdentifier: com.hunter.monart
+            UTTypeDescription: Monart Drawing
+            UTTypeConformsTo:
+              - com.apple.package
+              - public.composite-content
+            UTTypeTagSpecification:
+              public.filename-extension:
+                - monart
           - UTTypeIdentifier: com.hunter.canvas
-            UTTypeDescription: Canvas Drawing
+            UTTypeDescription: Monart Drawing (Canvas)
             UTTypeConformsTo:
               - com.apple.package
               - public.composite-content
@@ -67,13 +84,13 @@ targets:
               public.filename-extension:
                 - canvas
 
-  CanvasTests:
+  MonartTests:
     type: bundle.unit-test
     platform: macOS
     sources:
-      - path: CanvasTests
+      - path: MonartTests
     dependencies:
-      - target: Canvas
+      - target: Monart
     settings:
       base:
         GENERATE_INFOPLIST_FILE: YES
@@ -81,11 +98,11 @@ targets:
         CODE_SIGN_STYLE: Manual
 
 schemes:
-  Canvas:
+  Monart:
     build:
       targets:
-        Canvas: all
-        CanvasTests: [test]
+        Monart: all
+        MonartTests: [test]
     # Run the optimized build: pixel loops (fill, magic wand, brush) are 3–20× faster than
     # Debug. Tests still build Debug.
     run:
@@ -93,4 +110,4 @@ schemes:
     test:
       config: Debug
       targets:
-        - CanvasTests
+        - MonartTests

@@ -1,5 +1,5 @@
 import XCTest
-@testable import Canvas
+@testable import Monart
 
 final class SelectionTests: XCTestCase {
     private let red = CGColor(srgbRed: 1, green: 0, blue: 0, alpha: 1)

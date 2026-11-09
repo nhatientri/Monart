@@ -5,12 +5,26 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Canvas</string>
+	<string>Monart</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
 			<key>CFBundleTypeName</key>
-			<string>Canvas Drawing</string>
+			<string>Monart Drawing</string>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>LSHandlerRank</key>
+			<string>Owner</string>
+			<key>LSItemContentTypes</key>
+			<array>
+				<string>com.hunter.monart</string>
+			</array>
+			<key>LSTypeIsPackage</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>CFBundleTypeName</key>
+			<string>Monart Drawing (Canvas)</string>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>LSHandlerRank</key>
@@ -74,7 +88,25 @@
 				<string>public.composite-content</string>
 			</array>
 			<key>UTTypeDescription</key>
-			<string>Canvas Drawing</string>
+			<string>Monart Drawing</string>
+			<key>UTTypeIdentifier</key>
+			<string>com.hunter.monart</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>monart</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>com.apple.package</string>
+				<string>public.composite-content</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Monart Drawing (Canvas)</string>
 			<key>UTTypeIdentifier</key>
 			<string>com.hunter.canvas</string>
 			<key>UTTypeTagSpecification</key>

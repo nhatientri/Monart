@@ -1,6 +1,6 @@
 import ImageIO
 import XCTest
-@testable import Canvas
+@testable import Monart
 
 final class ImageIOTests: XCTestCase {
     private let green = CGColor(srgbRed: 0, green: 1, blue: 0, alpha: 1)

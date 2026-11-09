@@ -13,7 +13,7 @@ enum ImageImporter {
             case .unreadable:
                 "The image could not be read."
             case let .tooLarge(width, height):
-                "The image is \(width)×\(height) pixels. Canvas supports up to \(Bitmap.maxDimension) pixels per side."
+                "The image is \(width)×\(height) pixels. Monart supports up to \(Bitmap.maxDimension) pixels per side."
             }
         }
     }

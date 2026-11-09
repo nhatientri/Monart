@@ -3,7 +3,9 @@ import SwiftUI
 import UniformTypeIdentifiers
 
 extension UTType {
-    /// Native layered document (a package). Declared as an exported type in Info.plist.
+    /// Native layered document (a `.monart` package). Declared as an exported type in Info.plist.
+    static let monartDocument = UTType(exportedAs: "com.hunter.monart")
+    /// The same format under its name from before the app was renamed (`.canvas`).
     static let canvasDocument = UTType(exportedAs: "com.hunter.canvas")
 }
 
@@ -18,8 +20,9 @@ extension UTType {
 /// manager.
 @Observable
 final class CanvasDocument: ReferenceFileDocument {
-    static var readableContentTypes: [UTType] { [.canvasDocument, .png, .jpeg] }
-    static var writableContentTypes: [UTType] { [.canvasDocument] }
+    static var readableContentTypes: [UTType] { [.monartDocument, .canvasDocument, .png, .jpeg] }
+    /// New documents save as `.monart`; an old `.canvas` file keeps saving as `.canvas`.
+    static var writableContentTypes: [UTType] { [.monartDocument, .canvasDocument] }
 
     private(set) var model: CanvasModel
     @ObservationIgnored let history = HistoryManager()
@@ -31,7 +34,7 @@ final class CanvasDocument: ReferenceFileDocument {
     }
 
     init(configuration: ReadConfiguration) throws {
-        if configuration.contentType.conforms(to: .canvasDocument) {
+        if configuration.contentType.conforms(to: .monartDocument) || configuration.contentType.conforms(to: .canvasDocument) {
             model = try DocumentFormat.read(configuration.file)
         } else if configuration.contentType.conforms(to: .image) {
             guard let data = configuration.file.regularFileContents else {

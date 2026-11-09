@@ -1,12 +1,12 @@
 #!/usr/bin/env swift
-// Draws the Canvas app icon and writes every macOS size into the asset catalog.
+// Draws the Monart app icon and writes every macOS size into the asset catalog.
 // Usage: swift scripts/make-app-icon.swift   (from the repository root)
 import AppKit
 import CoreGraphics
 import ImageIO
 import UniformTypeIdentifiers
 
-let output = URL(fileURLWithPath: "Canvas/Resources/Assets.xcassets/AppIcon.appiconset")
+let output = URL(fileURLWithPath: "Monart/Resources/Assets.xcassets/AppIcon.appiconset")
 
 func color(_ hex: UInt32, _ alpha: CGFloat = 1) -> CGColor {
     CGColor(srgbRed: CGFloat((hex >> 16) & 0xFF) / 255, green: CGFloat((hex >> 8) & 0xFF) / 255,

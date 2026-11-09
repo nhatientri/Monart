@@ -1,5 +1,5 @@
 import XCTest
-@testable import Canvas
+@testable import Monart
 
 final class ToolTests: XCTestCase {
     private var model: CanvasModel!

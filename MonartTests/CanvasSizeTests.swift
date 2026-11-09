@@ -1,5 +1,5 @@
 import XCTest
-@testable import Canvas
+@testable import Monart
 
 final class CanvasSizeTests: XCTestCase {
     private func documentWithUndo(_ model: CanvasModel) -> (CanvasDocument, UndoManager) {

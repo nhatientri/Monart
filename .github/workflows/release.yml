@@ -27,7 +27,7 @@ jobs:
           fi
 
       - name: Run tests
-        run: xcodebuild test -project Canvas.xcodeproj -scheme Canvas -destination 'platform=macOS' -quiet
+        run: xcodebuild test -project Monart.xcodeproj -scheme Monart -destination 'platform=macOS' -quiet
 
       - name: Build app and disk image
         run: scripts/build-release.sh
@@ -36,6 +36,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release create "$GITHUB_REF_NAME" build/Canvas-*.dmg \
-            --title "Canvas ${GITHUB_REF_NAME#v}" \
+          gh release create "$GITHUB_REF_NAME" build/Monart-*.dmg \
+            --title "Monart ${GITHUB_REF_NAME#v}" \
             --notes-file .github/release-notes.md

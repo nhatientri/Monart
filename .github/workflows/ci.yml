@@ -1,4 +1,4 @@
-# Builds Canvas and runs the unit tests on every push to main and every pull request.
+# Builds Monart and runs the unit tests on every push to main and every pull request.
 name: CI
 
 on:
@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run tests
-        run: xcodebuild test -project Canvas.xcodeproj -scheme Canvas -destination 'platform=macOS' -quiet
+        run: xcodebuild test -project Monart.xcodeproj -scheme Monart -destination 'platform=macOS' -quiet

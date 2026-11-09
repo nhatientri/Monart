@@ -1,5 +1,5 @@
 import XCTest
-@testable import Canvas
+@testable import Monart
 
 final class CanvasModelTests: XCTestCase {
     private func names(_ model: CanvasModel) -> [String] { model.layers.map(\.name) }

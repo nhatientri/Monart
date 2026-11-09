@@ -54,9 +54,9 @@ enum DocumentFormat {
 
         var errorDescription: String? {
             switch self {
-            case .missingManifest: "The file is not a Canvas document (manifest.json is missing)."
+            case .missingManifest: "The file is not a Monart drawing (manifest.json is missing)."
             case .unreadableManifest: "The document's manifest is damaged."
-            case let .newerVersion(v): "This document was saved by a newer version of Canvas (format \(v))."
+            case let .newerVersion(v): "This drawing was saved by a newer version of Monart (format \(v))."
             case .invalidCanvas: "The document's size or layer list is invalid."
             case let .missingLayer(name): "The pixels for layer “\(name)” are missing."
             case let .unreadableLayer(name): "The pixels for layer “\(name)” are damaged."

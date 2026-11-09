@@ -74,6 +74,7 @@ final class BrushLibrary {
 
     private static var defaultDirectory: URL {
         let base = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
+        // "Canvas" was the app's name before it became Monart; kept so saved presets stay found.
         return base.appendingPathComponent("Canvas", isDirectory: true)
     }
 
@@ -96,7 +97,7 @@ final class BrushLibrary {
             encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
             try encoder.encode(custom).write(to: fileURL, options: .atomic)
         } catch {
-            NSLog("Canvas: could not save brush presets: \(error)")
+            NSLog("Monart: could not save brush presets: \(error)")
         }
     }
 

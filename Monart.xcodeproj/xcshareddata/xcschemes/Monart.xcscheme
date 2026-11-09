@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C9E7BF17F758EEF73CBF7800"
-               BuildableName = "Canvas.app"
-               BlueprintName = "Canvas"
-               ReferencedContainer = "container:Canvas.xcodeproj">
+               BlueprintIdentifier = "9099A0326A6B5D34EE8F2576"
+               BuildableName = "Monart.app"
+               BlueprintName = "Monart"
+               ReferencedContainer = "container:Monart.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,10 +29,10 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "70040954A7117B7EDC8086A0"
-               BuildableName = "CanvasTests.xctest"
-               BlueprintName = "CanvasTests"
-               ReferencedContainer = "container:Canvas.xcodeproj">
+               BlueprintIdentifier = "7AB6740A864355D65CA76752"
+               BuildableName = "MonartTests.xctest"
+               BlueprintName = "MonartTests"
+               ReferencedContainer = "container:Monart.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,10 +46,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C9E7BF17F758EEF73CBF7800"
-            BuildableName = "Canvas.app"
-            BlueprintName = "Canvas"
-            ReferencedContainer = "container:Canvas.xcodeproj">
+            BlueprintIdentifier = "9099A0326A6B5D34EE8F2576"
+            BuildableName = "Monart.app"
+            BlueprintName = "Monart"
+            ReferencedContainer = "container:Monart.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -58,10 +58,10 @@
             parallelizable = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "70040954A7117B7EDC8086A0"
-               BuildableName = "CanvasTests.xctest"
-               BlueprintName = "CanvasTests"
-               ReferencedContainer = "container:Canvas.xcodeproj">
+               BlueprintIdentifier = "7AB6740A864355D65CA76752"
+               BuildableName = "MonartTests.xctest"
+               BlueprintName = "MonartTests"
+               ReferencedContainer = "container:Monart.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -82,10 +82,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C9E7BF17F758EEF73CBF7800"
-            BuildableName = "Canvas.app"
-            BlueprintName = "Canvas"
-            ReferencedContainer = "container:Canvas.xcodeproj">
+            BlueprintIdentifier = "9099A0326A6B5D34EE8F2576"
+            BuildableName = "Monart.app"
+            BlueprintName = "Monart"
+            ReferencedContainer = "container:Monart.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -101,10 +101,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C9E7BF17F758EEF73CBF7800"
-            BuildableName = "Canvas.app"
-            BlueprintName = "Canvas"
-            ReferencedContainer = "container:Canvas.xcodeproj">
+            BlueprintIdentifier = "9099A0326A6B5D34EE8F2576"
+            BuildableName = "Monart.app"
+            BlueprintName = "Monart"
+            ReferencedContainer = "container:Monart.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
